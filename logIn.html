@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>	
+
+		<title> soliTech </title>
+		<link rel="icon" href="Images/favicon1.png">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<link href='http://fonts.googleapis.com/css?family=Ubuntu&subset=cyrillic,latin'
+		rel='stylesheet' type='text/css' />
+</head>		
+<body>
+
+	<div class = "header">
+		<a href="index.html"> <img src="Images/siteLogo.png" id="logo"> </a>
+		<h2 id="tagline"> "Bright solutions via IT innovations" </h2>
+	</div>
+	
+	<div class="nav">
+		<ul>
+			<li> <a href="index.html"> Home </a> </li>
+			<li> <a href="aboutUs.html"> About Us </a> </li>
+			<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn"> Solutions </a>
+				<div class="dropdown-content">
+				<a href="products.html"> Products </a>
+				<a href="services.html"> Services </a>
+				</div>
+			</li>
+			<li> <a href="contactUs.html"> Contact Us </a> </li>
+			<li class="dropdown" style="float:right">
+				<a href="javascript:void(0)" class= "selected" class="dropbtn"  style="color:white"> Accounts </a>
+				<div class="dropdown-content">
+				<a href="#"> Log In </a>
+				<a href="signUp.html"> Sign Up </a>
+				</div>
+			</li>
+		</ul>	
+	</div>
+	
+<style>
+#cont{
+	padding: 50px 75px 50px 75px;
+}
+form {
+	border: 3px solid #f1f1f1;
+}
+
+input[type=text], input[type=password] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+.loginbtn {
+	background: linear-gradient(#65b022, #004c6d);
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+}
+
+.loginbtn:hover {
+	opacity: 0.8;
+}
+
+.imgcontainer {
+	text-align: center;
+	margin: 24px 0 12px 0;
+}
+
+img.avatar {
+	width: 10%;
+	border-radius: 50%;
+}
+
+.container {
+	padding: 16px;
+}
+
+span.psw {
+	float: right;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+	span.psw {
+		display: block;
+		float: none;
+	}
+}
+</style>
+	<div class="content">
+		<div id="cont">
+			<h2>Login Form</h2>
+
+		<form action="/action_page.php" method="post">
+			<div class="imgcontainer">
+			<img src="Images/avatar.png" class="avatar">
+			</div>
+
+		<div class="container">
+			<label for="uname"><b>Username</b></label>
+				<input type="text" placeholder="Enter Username" name="uname" required>
+
+			<label for="psw"><b>Password</b></label>
+				<input type="password" placeholder="Enter Password" name="psw" required>
+        
+			<button type="submit" class="loginbtn">Login</button>
+			
+			</div>
+
+			<div class="container" style="background-color:#f1f1f1">
+				<label>
+				<input type="checkbox" checked="checked" name="remember"> Remember me
+				</label>
+				<span class="psw">Forgot <a href="#">password?</a></span>
+			</div>
+			
+		</form>
+		</div>
+	</div>
+	
+	<div class="footer">
+		<h4> &copy; | This is a project of soliTech Team | <h4>
+	</div>
+</body>	
+</html>

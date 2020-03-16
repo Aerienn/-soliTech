@@ -1,0 +1,148 @@
+body{
+	background: #E5E5E5;
+	flex: auto;
+	min-width: 875px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	font-family: 'Ubuntu', sans-serif;
+	margin: 0px;
+}
+#logo{
+	margin: 60px 0px 10px 75px;
+	max-width: 100%;
+	height: auto;
+	position: relative;
+}	
+#tagline{
+	float:right;
+	position: relative;
+	margin: 115px 50px 0px 0px;
+	font-style: italic;
+	font-weight: 500;
+	font-size: 23px;
+	text-shadow: 4px 4px 4px #aaa;
+}	
+.content{
+	position: relative;
+	flex: auto;
+	margin: 0px 55px 0px 55px;
+    margin-top: 0px;
+	background: #FFFFFF;
+	box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
+}	
+/* THE NAVIGATION */
+.nav{
+	position: sticky;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	margin-left: 55px;
+	margin-right: 55px;
+	height: 50px;
+	background: #ff0202;
+}	
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: linear-gradient(#65b0d0, #004c6d);
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+li a:hover, .dropdown:hover {
+  background: linear-gradient(#ffff00, #ff0202);
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+li a.selected:link{  
+	background: #ff0202;
+}	
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	border: none;
+	outline: none;
+	background-color: inherit;
+	margin: 0; 
+}
+	
+/* Add gradient on button on hover */
+.dropdown:hover .dropbtn{
+	background: linear-gradient(#ffff00, #ff0202);
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #ff0202;
+	min-width: 98px;
+	z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+	float: none;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+/* Add a gradient background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background: linear-gradient(#ff0202, #c1121f);
+  color: white;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropbtn a {
+	color: black;
+	text-decoration: none;
+}	
+/*END OF NAVIGATION*/
+
+
+.footer {
+	flex: auto;
+    padding: 5px;
+    margin: 0px 55px 0px 55px;
+	text-align: center;
+	background: linear-gradient(#65b0d0, #004c6d);
+	font-family: Capriola, Helvetica, sans-serif;
+    clear: both;
+    position: relative;
+	
+}	
+	

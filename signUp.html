@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>	
+
+		<title> soliTech </title>
+		<link rel="icon" href="Images/favicon1.png">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<link href='http://fonts.googleapis.com/css?family=Ubuntu&subset=cyrillic,latin'
+		rel='stylesheet' type='text/css' />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>		
+<body>
+
+	<div class = "header">
+		<a href="index.html"> <img src="Images/siteLogo.png" id="logo"> </a>
+		<h2 id="tagline"> "Bright solutions via IT innovations" </h2>
+	</div>
+	
+	<div class="nav">
+		<ul>
+			<li> <a href="index.html"> Home </a> </li>
+			<li> <a href="aboutUs.html"> About Us </a> </li>
+			<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn"> Solutions </a>
+				<div class="dropdown-content">
+				<a href="products.html"> Products </a>
+				<a href="services.html"> Services </a>
+				</div>
+			</li>
+			<li> <a href="contactUs.html"> Contact Us </a> </li>
+			<li class="dropdown" style="float:right">
+				<a href="javascript:void(0)" class= "selected" class="dropbtn"  style="color:white"> Accounts </a>
+				<div class="dropdown-content">
+				<a href="logIn.html"> Log In </a>
+				<a href="#"> Sign Up </a>
+				</div>
+			</li>
+		</ul>	
+	</div>
+	
+<style>
+#cont{
+	padding: 50px 75px 50px 75px;
+}
+/* Full-width input fields */
+input[type=text], input[type=password], input[type=email] {
+	width: 95%;
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	display: inline-block;
+	border: none;
+	background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+	background-color: #ddd;
+	outline: none;
+}
+
+hr {
+	border: 1px solid #f1f1f1;
+	margin-bottom: 25px;
+}
+
+/* Set a style buttons */
+.signupbtn {
+	background: linear-gradient(#65b022, #004c6d);
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	opacity: 0.9;
+}
+
+button:hover {
+	opacity:1;
+}
+
+/* Add padding to container elements */
+.container {
+	padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+	.signupbtn {
+		width: 100%;
+	}
+}
+</style>
+	<div class="content">
+		<div id="cont">
+		<form action="/action_page.php" style="border:1px solid #ccc">
+		<div class="container">
+			<h1>Sign Up</h1>
+			<p>Please fill in this form to create an account.</p>
+			<hr>
+
+			<label for="email"><b> Email:</b></label>
+			<br>	<input type="email" placeholder="Enter Email" name="email" required><br>
+				
+			<label for="usn"><b> Username:</b></label>
+			<br>	<input type="text" placeholder="Enter Username" name="usn" required><br>
+				
+			<label for="psw"><b> Password:</b></label>
+			<br>	<input type="password" placeholder="Enter Password" name="psw" required><br>
+
+			<label for="psw-repeat"><b> Repeat Password:</b></label>
+			<br>	<input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+    
+			<p>By creating an account you agree to our <a href="#" onclick="myFunction()" style="color:dodgerblue">Terms & Condition</a>.</p>
+
+<script>
+function myFunction() {
+	var tnc = "Terms and Condition \n \nOur site is written by a desparate student so anything you put in here is not guaranteed to be" +
+			" one hundred percent safe so anything you place in this site is pretty much unsecured. \nWe don't really have any money to fund" +
+			" anything and I am pretty sure just a small amount of people read Terms & Conditions so I'm laying out all this dumb message." +
+			"\nShaaadilaaaaay. I am prolly not aurtistic but it's pretty weaponized.";
+  alert(tnc);
+}
+</script>
+
+			<div class="clearfix">
+				<button type="submit" class="signupbtn">Sign Up</button>
+			</div>
+
+		</div>
+		</form> 
+		</div>
+	</div>
+	
+	<div class="footer">
+		<h4> &copy; | This is a project of soliTech Team | <h4>
+	</div>
+</body>	
+</html>

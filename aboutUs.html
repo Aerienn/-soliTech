@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>	
+
+		<title> soliTech </title>
+		<link rel="icon" href="Images/favicon1.png">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<link href='http://fonts.googleapis.com/css?family=Ubuntu&subset=cyrillic,latin'
+		rel='stylesheet' type='text/css' />
+</head>		
+<body>
+
+	<div class = "header">
+		<a href="index.html"> <img src="Images/siteLogo.png" id="logo"> </a>
+		<h2 id="tagline"> "Bright solutions via IT innovations" </h2>
+	</div>
+	
+	<div class="nav">
+		<ul>
+			<li> <a href="index.html"> Home </a> </li>
+			<li> <a href="#" class= "selected" style="color:white"> About Us </a> </li>
+			<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn"> Solutions </a>
+				<div class="dropdown-content">
+				<a href="products.html"> Products </a>
+				<a href="services.html"> Services </a>
+				</div>
+			</li>
+			<li> <a href="contactUs.html"> Contact Us </a> </li>
+			<li class="dropdown" style="float:right"> 
+				<a href="javascript:void(0)" class="dropbtn"> Accounts </a>
+				<div class="dropdown-content">
+				<a href="logIn.html"> Log In </a>
+				<a href="signUp.html"> Sign Up </a>
+				</div>
+			</li>
+		</ul>	
+	</div>
+	
+<style>
+		#descp{
+			background: #F7F7F9;
+			height: 475px;
+			width: 100%;
+			overflow: auto;
+			position : relative;
+		}
+		.description{
+			position: relative;
+			float: left;
+			margin: 50px 25px 50px 55px;
+			width: 350px;
+			height: 300px;
+			font-size: 23px;
+		}
+		.welcome, .randomppl {
+			position: absolute;
+			top: 25px;
+			left: 25px;
+			}
+		.welcome{
+			height: 400px;
+			margin-top: 20px;
+			margin-left: 450px;
+			z-index: 5;
+		}
+		.randomppl{
+			height: 350px;
+			margin-top: 30px;
+			margin-left: 600px;
+			z-index: 2;
+			box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.25);
+		}
+		#misAndVis{
+			background-image: url("Images/misAvis.jpg");
+			height: 750px;
+			width: 100%;
+			background-repeat: no-repeat;
+			background-size: cover;
+			position: relative;
+			padding-top: 70px;
+		}
+		.mission,.vision{
+			text-align:center;
+			padding: 45px 80px 45px 80px;
+			font-size: 20px;
+			height: 30%;
+		}
+		.oTins{
+			padding-top: 1px;
+			text-align: center;
+		}
+		#ourTeam{
+			height: 550px;
+			background-color: #E5E5E5;
+			position:relative;
+			overflow: auto;
+			display: flex;
+			justify-content: center;
+			flex-direction: row;
+		}
+		.card{
+			float:left;
+			flex: auto;
+			box-sizing: border-box;
+			padding: 20px 25px 30px 25px;
+			margin: 0px 20px 30px 20px;
+			background-color: #FFFFFF;
+			text-align:center;
+			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		}
+		.name{
+			font-size: 25px;
+			font-weight: 600;
+			color:  #004C6D;
+		}
+		.position{
+			font-size: 18px;
+		}
+		.pics{
+			margin-bottom: 10px;
+		}
+</style>
+	<div class="content">
+		<div id="descp">
+			<div class="description">
+			<p>Established at 2019, Solitech is a small business that bloomed in 5 months.</p>
+			
+			<p>There are almost 98 branches across the nation with 10 partners in the IT industry.</p>
+
+			<p>We would like to express our utmost hospitality,<br>Welcome and take a look at what we could offer!</p>
+			</div>
+			<img src="Images/Techat_paw.png" class="welcome">
+			<img src="Images/aU1.jpg" class="randomppl">
+		</div>
+		
+		<div id="misAndVis">
+			<div class="mission" style="background:rgba(0, 0.5, 0.5, 0.5);color:white">
+			<h1> Mission </h1>
+		<p>As one of the leading businesses in the industry of technology, <br>
+		Solitech is an IT Company for IT professionals and Technology Users through our solutions and services.</p>
+		<p>We offer a well-rounded catalogue, that aims to provide you the necessary tools to equip you for your needs.</p>
+			</div>
+			<div class="vision" style="background:rgba(255, 255, 255, 0.6);color:black;margin-top:70px">
+			<h1> Vision </h1>
+		<p>Our goal is to be of assistance to our customers <br> by giving them high-quality products and professional services. </p>
+		<p>We want to give a chance to Filipino ICT professionals to maximize their potentials using our products, helping out in the Tech industry of the country.</p>
+			</div>
+		</div>
+	
+		<div id="ourTeam">
+			<div  class="oTins">
+		<h1 style="font-size:50px">Our <span style="color: #004C6D"> Team</span></h1>
+			<div class="card">
+				<img src="Images/aU2.jpg" class="pics">
+				<br> <span class="name">Meme Man</span><br>
+				<span class="position">Admin Supervisor</span>
+			</div>	
+			
+			<div class="card">
+				<img src="Images/aU3.jpg" class="pics">
+				<br><span class="name">Michael Scott</span><br>
+				<span class="position">Admin Manager</span>
+			</div>	
+			
+			<div class="card">
+				<img src="Images/aU4.jpg" class="pics">
+				<br><span class="name">Harold Hide</span><br>
+				<span class="position">Admin Executive</span>
+			</div>	
+			</div>
+		</div>
+	</div>
+	
+	<div class="footer">
+		<h4> &copy; | This is a project of soliTech Team | <h4>
+	</div>
+</body>	
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>	
+
+		<title> soliTech </title>
+		<link rel="icon" href="Images/favicon1.png">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<link href='http://fonts.googleapis.com/css?family=Ubuntu&subset=cyrillic,latin'
+		rel='stylesheet' type='text/css' />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>		
+<body>
+
+	<div class = "header">
+		<a href="index.html"> <img src="Images/siteLogo.png" id="logo"> </a>
+		<h2 id="tagline"> "Bright solutions via IT innovations" </h2>
+	</div>
+	
+	<div class="nav">
+		<ul>
+			<li> <a href="index.html"> Home </a> </li>
+			<li> <a href="aboutUs.html">About Us </a> </li>
+			<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn"> Solutions </a>
+				<div class="dropdown-content">
+				<a href="products.html"> Products </a>
+				<a href="services.html"> Services </a>
+				</div>
+			</li>
+			<li> <a href="#" class= "selected" style="color:white"> Contact Us </a> </li>
+			<li class="dropdown" style="float:right"> 
+				<a href="javascript:void(0)" class="dropbtn"> Accounts </a>
+				<div class="dropdown-content">
+				<a href="logIn.html"> Log In </a>
+				<a href="signUp.html"> Sign Up </a>
+				</div>
+			</li>
+		</ul>	
+	</div>
+	
+<style>
+	#head{
+		padding: 50px 0px 30px 0px;
+	}
+	.intro{
+		text-align:center;
+		color: #004C6D;
+		font-size:40px;
+	}
+	#contactList{
+			position: relative;
+			float: left;
+			margin-left: 125px;
+			font-size: 23px;
+	}
+	.techatsmol{
+		height: 325px;
+		position:absolute;
+		z-index:5;
+		margin-left: 80px;
+	}
+	#map {
+		width: 80%;
+		height: 400px;
+		margin: 0px 10% 0px 10%;
+		box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.25);
+	}
+	.content{
+		padding-bottom: 100px;
+	}
+</style>
+
+	<div class="content">
+		<div id="head">
+			<h1 class="intro">We are happy to serve you!</h1>
+		</div>	
+		<div id="contactList">
+			<span style="font-size:30px;font-weight:550">Talk to us through:</span><br><br>
+			<i class="material-icons" style="padding:10px"> phone </i> Telephone: + (180) 1935700<br><br>
+			<i class="material-icons" style="padding:10px"> email </i> Email: contact@solitech.com<br><br>
+			<i class="material-icons" style="padding:10px"> face </i> Facebook: @soliTech<br><br>
+			Visit us at: 434 CC Ara Vista General Trias, Cavite, Philippines
+		</div>
+
+		<img src="Images/Techat_call.png" class="techatsmol">
+
+		<div id="map"></div>		
+	</div>
+	
+<!--- Map script for it to work an stuff ---> 
+<script>
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  var uluru = {lat: 14.281819, lng: 120.913479};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDU7WV951pMzVWI0Bj7SLpo9UCkQodtg0o&callback=initMap"> </script>
+
+	
+	<div class="footer">
+		<h4> &copy; | This is a project of soliTech Team | <h4>
+	</div>
+</body>	
+</html>
